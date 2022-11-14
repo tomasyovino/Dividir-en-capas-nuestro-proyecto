@@ -1,0 +1,66 @@
+<div class="container my-3">
+    <div class="header d-flex justify-content-between">
+        <button onclick="location.href='/api/main'"><h1>LOGO</h1></button>
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src={{data.imgUrl}} alt="avatar" />
+        </button>
+        <ul class="dropdown-menu">
+            <li>
+            <button
+                class="dropdown-item"
+                onclick="location.href='/api/profile'"
+            >
+                Perfil
+            </button>
+            </li>
+            <li>
+            <button
+                class="dropdown-item"
+                onclick="location.href='/api/cart'"
+            >
+                Carrito
+            </button>
+            </li>
+            <li>
+            <button
+                class="dropdown-item"
+                onclick="location.href='/api/logout'"
+            >
+                Salir
+            </button>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src={{data.imgUrl}} alt="User image">
+        <div class="container">
+            <div>
+                <strong>Usuario:</strong>
+                <span>{{data.username}}</span>
+            </div>
+
+            <div>
+                <strong>Email:</strong>
+                <span>{{data.email}}</span>
+            </div>
+
+            <div>
+                <strong>Dirección:</strong>
+                <span>{{data.direction}}</span>
+            </div>
+
+            <div>
+                <strong>Año de nacimiento:</strong>
+                <span>{{data.birthDate}}</span>
+            </div>
+
+            <div>
+                <strong>Teléfono:</strong>
+                <span>{{data.phoneNumber}}</span>
+            </div>
+        </div>
+    </div>
+</div>

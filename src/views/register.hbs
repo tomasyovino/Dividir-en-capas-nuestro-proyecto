@@ -1,0 +1,104 @@
+<div class="container my-5">
+  <div class="jumbotron">
+
+    <h1>REGISTRARSE</h1>
+    <br />
+    <form
+      class="form d-flex flex-column"
+      action="/api/register"
+      method="post"
+      role="form"
+      autocomplete="off"
+      enctype="multipart/form-data"
+      style="gap: 20px;"
+    >
+
+      <div class="form-group">
+        <input
+          id="username"
+          name="username"
+          placeholder="Usuario"
+          class="form-control"
+          type="text"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          id="password"
+          name="password"
+          placeholder="Contraseña"
+          class="form-control"
+          type="password"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          id="email"
+          name="email"
+          placeholder="Email"
+          class="form-control"
+          type="text"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          id="direction"
+          name="direction"
+          placeholder="Dirección"
+          class="form-control"
+          type="text"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          id="birthDate"
+          name="birthDate"
+          placeholder="Año de nacimiento"
+          class="form-control"
+          type="text"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          id="phoneNumber"
+          name="phoneNumber"
+          placeholder="Número de teléfono"
+          class="form-control"
+          type="tel"
+          required
+        />
+      </div>
+
+      <div class="form-group d-flex flex-column">
+        <label>Sube un avatar!</label>
+        <input
+          id="image"
+          name="image"
+          type="file"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <input class="btn btn-success my-3" type="submit" value="Registrarse" />
+      </div>
+    </form>
+
+    <hr />
+
+    <div class="text-left">
+      <button class="btn btn-success my-3" onclick="location.href = '/api/login'">Iniciar Sesión</button>
+    </div>
+
+  </div>
+</div>
